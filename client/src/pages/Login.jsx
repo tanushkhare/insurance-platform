@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
-
+import { loginUser } from "../services/authService";
 import { AuthContext } from "../context/AuthContext";
 
 function Login() {
@@ -25,47 +25,26 @@ function Login() {
     });
   };
 
-  const submitHandler = async (e) => {
-    e.preventDefault();
+    const submitHandler = async (e) => {
+  e.preventDefault();
 
-    try {
+  try {
+    const data = await loginUser({
+      email,
+      password,
+    });
 
-      const response = await fetch(
-        "http://localhost:5000/api/auth/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email,
-            password,
-          }),
-        }
-      );
+    login(data);
 
-      const data = await response.json();
+    navigate("/dashboard");
 
-      if (!response.ok) {
-
-        setError(data.message);
-
-      } else {
-
-        /* Save User in Context */
-        login(data);
-
-        /* Redirect to Dashboard */
-        navigate("/dashboard");
-      }
-
-    } catch (error) {
-
-      setError("Something went wrong");
-
-    }
-  };
-
+  } catch (error) {
+    setError(
+      error.response?.data?.message ||
+      "Something went wrong"
+    );
+  }
+};
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-100 px-4">
 
