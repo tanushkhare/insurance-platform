@@ -55,7 +55,11 @@ function App() {
 
         <Route
   path="/contact"
-  element={<Contact />}
+  element={
+    <Layout>
+      <Contact />
+    </Layout>
+  }
 />
 
         <Route path="/login" element={<Login />} />

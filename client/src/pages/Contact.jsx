@@ -1,9 +1,7 @@
-import Navbar from "../components/layout/Navbar";
 
 function Contact() {
   return (
     <>
-      <Navbar />
 
       <div className="min-h-screen bg-gray-100 py-12 px-6">
         <div className="max-w-7xl mx-auto">
