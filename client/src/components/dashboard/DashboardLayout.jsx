@@ -52,7 +52,9 @@ function DashboardLayout() {
         </div>
 
         {/* Nested Pages */}
-        <Outlet />
+        <div className="bg-red-500 text-white p-4 text-3xl">
+  OUTLET TEST
+</div>
 
       </div>
 
