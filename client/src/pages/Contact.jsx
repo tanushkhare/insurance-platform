@@ -1,157 +1,162 @@
 import Navbar from "../components/layout/Navbar";
+
 function Contact() {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-6">
-      <div className="max-w-7xl mx-auto">
+    <>
+      <Navbar />
 
-        {/* Heading */}
-        <div className="text-center mb-12">
-          <h1 className="text-6xl font-bold text-blue-900 mb-4">
-            Contact Us
-          </h1>
+      <div className="min-h-screen bg-gray-100 py-12 px-6">
+        <div className="max-w-7xl mx-auto">
 
-          <p className="text-xl text-gray-600">
-            We're here to help with your insurance and financial planning needs.
-          </p>
-        </div>
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <h1 className="text-6xl font-bold text-blue-900 mb-4">
+              Contact Us
+            </h1>
 
-        {/* Main Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+            <p className="text-xl text-gray-600">
+              We're here to help with your insurance and financial planning needs.
+            </p>
+          </div>
 
-          {/* Left Side */}
-          <div className="space-y-6">
+          {/* Main Grid */}
+          <div className="grid md:grid-cols-2 gap-8">
 
-            {/* Email */}
-            <div className="bg-white rounded-3xl shadow-lg p-8">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-5xl">📧</span>
+            {/* Left Side */}
+            <div className="space-y-6">
 
-                <h2 className="text-3xl font-bold text-blue-700">
-                  Email
-                </h2>
+              {/* Email */}
+              <div className="bg-white rounded-3xl shadow-lg p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="text-5xl">📧</span>
+
+                  <h2 className="text-3xl font-bold text-blue-700">
+                    Email
+                  </h2>
+                </div>
+
+                <p className="text-xl text-gray-600">
+                  support@insurancepro.com
+                </p>
               </div>
 
-              <p className="text-xl text-gray-600">
-                support@insurancepro.com
-              </p>
+              {/* Phone */}
+              <div className="bg-white rounded-3xl shadow-lg p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="text-5xl">📞</span>
+
+                  <h2 className="text-3xl font-bold text-green-700">
+                    Phone Number
+                  </h2>
+                </div>
+
+                <p className="text-xl text-gray-600">
+                  +91 9876543210
+                </p>
+              </div>
+
+              {/* Address */}
+              <div className="bg-white rounded-3xl shadow-lg p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="text-5xl">📍</span>
+
+                  <h2 className="text-3xl font-bold text-purple-700">
+                    Office Address
+                  </h2>
+                </div>
+
+                <p className="text-xl text-gray-600">
+                  Pune, Maharashtra, India
+                </p>
+              </div>
+
             </div>
 
-            {/* Phone */}
-            <div className="bg-white rounded-3xl shadow-lg p-8">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-5xl">📞</span>
+            {/* Right Side */}
+            <div className="bg-white rounded-3xl shadow-lg p-10">
 
-                <h2 className="text-3xl font-bold text-green-700">
-                  Phone Number
+              <div className="flex items-center gap-4 mb-8">
+                <span className="text-6xl">🏢</span>
+
+                <h2 className="text-5xl font-bold text-gray-900">
+                  Business Details
                 </h2>
               </div>
 
-              <p className="text-xl text-gray-600">
-                +91 9876543210
-              </p>
-            </div>
+              <div className="space-y-5 text-xl">
 
-            {/* Address */}
-            <div className="bg-white rounded-3xl shadow-lg p-8">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-5xl">📍</span>
+                <p>
+                  <strong>Organization:</strong> InsurancePro
+                </p>
 
-                <h2 className="text-3xl font-bold text-purple-700">
-                  Office Address
-                </h2>
+                <p>
+                  <strong>Founder:</strong> Gopinath Krishna Raj
+                </p>
+
+                <p>
+                  <strong>Email:</strong> support@insurancepro.com
+                </p>
+
+                <p>
+                  <strong>Phone:</strong> +91 9876543210
+                </p>
+
+                <p>
+                  <strong>Location:</strong> Pune, Maharashtra
+                </p>
+
+                <p>
+                  <strong>Services:</strong> Life Insurance, Health Insurance,
+                  Mutual Funds, SIP Planning
+                </p>
+
               </div>
 
-              <p className="text-xl text-gray-600">
-                Pune, Maharashtra, India
-              </p>
             </div>
 
           </div>
 
-          {/* Right Side */}
-          <div className="bg-white rounded-3xl shadow-lg p-10">
+          {/* Contact Form */}
+          <div className="bg-white rounded-3xl shadow-lg p-10 mt-12">
 
-            <div className="flex items-center gap-4 mb-8">
-              <span className="text-6xl">🏢</span>
+            <h2 className="text-4xl font-bold text-center text-blue-900 mb-8">
+              Send Us a Message
+            </h2>
 
-              <h2 className="text-5xl font-bold text-gray-900">
-                Business Details
-              </h2>
-            </div>
+            <form className="space-y-6">
 
-            <div className="space-y-5 text-xl">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full border rounded-xl p-4 text-lg"
+              />
 
-              <p>
-                <strong>Organization:</strong> InsurancePro
-              </p>
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full border rounded-xl p-4 text-lg"
+              />
 
-              <p>
-                <strong>Founder:</strong> Gopinath Krishna Raj
-              </p>
+              <textarea
+                rows="5"
+                placeholder="Your Message"
+                className="w-full border rounded-xl p-4 text-lg"
+              />
 
-              <p>
-                <strong>Email:</strong> support@insurancepro.com
-              </p>
+              <button
+                type="submit"
+                className="bg-blue-900 text-white px-8 py-4 rounded-xl text-xl font-bold hover:bg-blue-800"
+              >
+                Send Message
+              </button>
 
-              <p>
-                <strong>Phone:</strong> +91 9876543210
-              </p>
-
-              <p>
-                <strong>Location:</strong> Pune, Maharashtra
-              </p>
-
-              <p>
-                <strong>Services:</strong> Life Insurance, Health Insurance,
-                Mutual Funds, SIP Planning
-              </p>
-
-            </div>
+            </form>
 
           </div>
 
         </div>
-
-        {/* Contact Form */}
-        <div className="bg-white rounded-3xl shadow-lg p-10 mt-12">
-
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-8">
-            Send Us a Message
-          </h2>
-
-          <form className="space-y-6">
-
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full border rounded-xl p-4 text-lg"
-            />
-
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full border rounded-xl p-4 text-lg"
-            />
-
-            <textarea
-              rows="5"
-              placeholder="Your Message"
-              className="w-full border rounded-xl p-4 text-lg"
-            />
-
-            <button
-              type="submit"
-              className="bg-blue-900 text-white px-8 py-4 rounded-xl text-xl font-bold hover:bg-blue-800"
-            >
-              Send Message
-            </button>
-
-          </form>
-
-        </div>
-
       </div>
-    </div>
+    </>
   );
 }
 
