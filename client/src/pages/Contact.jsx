@@ -1,14 +1,6 @@
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Building2,
-} from "lucide-react";
-
 function Contact() {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-6">
-
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
@@ -18,8 +10,7 @@ function Contact() {
           </h1>
 
           <p className="text-xl text-gray-600">
-            We're here to help with your insurance and
-            financial planning needs.
+            We're here to help with your insurance and financial planning needs.
           </p>
         </div>
 
@@ -32,10 +23,7 @@ function Contact() {
             {/* Email */}
             <div className="bg-white rounded-3xl shadow-lg p-8">
               <div className="flex items-center gap-4 mb-4">
-                <Mail
-                  size={40}
-                  className="text-blue-600"
-                />
+                <span className="text-5xl">📧</span>
 
                 <h2 className="text-3xl font-bold text-blue-700">
                   Email
@@ -50,10 +38,7 @@ function Contact() {
             {/* Phone */}
             <div className="bg-white rounded-3xl shadow-lg p-8">
               <div className="flex items-center gap-4 mb-4">
-                <Phone
-                  size={40}
-                  className="text-green-600"
-                />
+                <span className="text-5xl">📞</span>
 
                 <h2 className="text-3xl font-bold text-green-700">
                   Phone Number
@@ -68,10 +53,7 @@ function Contact() {
             {/* Address */}
             <div className="bg-white rounded-3xl shadow-lg p-8">
               <div className="flex items-center gap-4 mb-4">
-                <MapPin
-                  size={40}
-                  className="text-purple-600"
-                />
+                <span className="text-5xl">📍</span>
 
                 <h2 className="text-3xl font-bold text-purple-700">
                   Office Address
@@ -82,16 +64,14 @@ function Contact() {
                 Pune, Maharashtra, India
               </p>
             </div>
+
           </div>
 
           {/* Right Side */}
           <div className="bg-white rounded-3xl shadow-lg p-10">
 
             <div className="flex items-center gap-4 mb-8">
-              <Building2
-                size={45}
-                className="text-blue-900"
-              />
+              <span className="text-6xl">🏢</span>
 
               <h2 className="text-5xl font-bold text-gray-900">
                 Business Details
@@ -101,37 +81,32 @@ function Contact() {
             <div className="space-y-5 text-xl">
 
               <p>
-                <strong>Organization:</strong>{" "}
-                InsurancePro
+                <strong>Organization:</strong> InsurancePro
               </p>
 
               <p>
-                <strong>Founder:</strong>{" "}
-                Gopinath Krishna Raj
+                <strong>Founder:</strong> Gopinath Krishna Raj
               </p>
 
               <p>
-                <strong>Email:</strong>{" "}
-                support@insurancepro.com
+                <strong>Email:</strong> support@insurancepro.com
               </p>
 
               <p>
-                <strong>Phone:</strong>{" "}
-                +91 9876543210
+                <strong>Phone:</strong> +91 9876543210
               </p>
 
               <p>
-                <strong>Location:</strong>{" "}
-                Pune, Maharashtra
+                <strong>Location:</strong> Pune, Maharashtra
               </p>
 
               <p>
-                <strong>Services:</strong>{" "}
-                Life Insurance, Health Insurance,
+                <strong>Services:</strong> Life Insurance, Health Insurance,
                 Mutual Funds, SIP Planning
               </p>
 
             </div>
+
           </div>
 
         </div>
@@ -161,7 +136,7 @@ function Contact() {
               rows="5"
               placeholder="Your Message"
               className="w-full border rounded-xl p-4 text-lg"
-            ></textarea>
+            />
 
             <button
               type="submit"
@@ -171,10 +146,10 @@ function Contact() {
             </button>
 
           </form>
+
         </div>
 
       </div>
-
     </div>
   );
 }
