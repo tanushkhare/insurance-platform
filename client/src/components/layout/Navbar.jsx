@@ -26,7 +26,7 @@ function Navbar() {
           to="/"
           className="text-4xl font-bold"
         >
-          InsurancePro
+           Gopinath Insurance
         </Link>
 
         {/* Menu */}

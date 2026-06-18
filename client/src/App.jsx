@@ -6,6 +6,11 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ExplorePlans from "./pages/ExplorePlans";
+
+import GeneralInsurance from "./pages/GeneralInsurance";
+import LifeInsurance from "./pages/LifeInsurance";
+import MutualFunds from "./pages/MutualFunds";
 
 /* CHATBOT */
 import ChatBot from "./chatbot/chatBot";
@@ -31,6 +36,7 @@ function App() {
   return (
     <>
       <Routes>
+
         {/* ==========================================
             PUBLIC ROUTES
         ========================================== */}
@@ -54,17 +60,65 @@ function App() {
         />
 
         <Route
-  path="/contact"
-  element={
-    <Layout>
-      <Contact />
-    </Layout>
-  }
-/>
+          path="/contact"
+          element={
+            <Layout>
+              <Contact />
+            </Layout>
+          }
+        />
 
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/plans"
+          element={
+            <Layout>
+              <ExplorePlans />
+            </Layout>
+          }
+        />
 
-        <Route path="/register" element={<Register />} />
+        {/* General Insurance */}
+
+        <Route
+          path="/plans/general"
+          element={
+            <Layout>
+              <GeneralInsurance />
+            </Layout>
+          }
+        />
+
+        {/* Life Insurance */}
+
+        <Route
+          path="/plans/life"
+          element={
+            <Layout>
+              <LifeInsurance />
+            </Layout>
+          }
+        />
+
+        {/* Mutual Funds */}
+
+        <Route
+          path="/plans/mutual-funds"
+          element={
+            <Layout>
+              <MutualFunds />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+
+        <Route
+          path="/register"
+          element={<Register />}
+        />
 
         {/* ==========================================
             PROTECTED DASHBOARD
@@ -79,41 +133,52 @@ function App() {
           }
         >
           {/* Dashboard Home */}
-          <Route index element={<Dashboard />} />
+
+          <Route
+            index
+            element={<Dashboard />}
+          />
 
           {/* Policies */}
+
           <Route
             path="policies"
             element={<Policies />}
           />
 
           {/* Create Policy */}
+
           <Route
             path="create-policy"
             element={<CreatePolicy />}
           />
 
           {/* Claims */}
+
           <Route
             path="claims"
             element={<Claims />}
           />
 
           {/* Investments */}
+
           <Route
             path="investments"
             element={<Investments />}
           />
 
           {/* Profile */}
+
           <Route
             path="profile"
             element={<Profile />}
           />
         </Route>
+
       </Routes>
 
       {/* Global ChatBot */}
+
       <ChatBot />
     </>
   );

@@ -112,13 +112,11 @@ function Policies() {
         {/* CREATE BUTTON */}
 
         <Link
-          to="/dashboard/create-policy"
-          className="bg-blue-900 text-white px-5 py-3 rounded-xl hover:bg-blue-800"
-        >
-
-          + Create Policy
-
-        </Link>
+  to="/"
+  className="bg-blue-900 text-white px-5 py-3 rounded-xl hover:bg-blue-800"
+>
+  + Add Policy
+</Link>
 
       </div>
 

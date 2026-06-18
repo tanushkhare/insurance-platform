@@ -9,107 +9,220 @@ function Home() {
           HERO SECTION
       ========================================== */}
 
-      <section className="flex flex-col items-center justify-center text-center px-6 py-32">
+      <section className="px-6 py-24 text-center">
 
-        {/* HEADING */}
-
-        <h1 className="text-6xl md:text-8xl font-extrabold leading-tight max-w-6xl">
+        <h1 className="text-6xl md:text-8xl font-extrabold leading-tight max-w-6xl mx-auto">
           Secure Your Future With
           <br />
           Trusted Insurance
         </h1>
 
-        {/* SUBTEXT */}
-
-        <p className="text-2xl md:text-3xl text-gray-200 mt-10 max-w-5xl leading-relaxed">
-          Life Insurance, Health Insurance, Mutual Funds,
-          SIP Planning, and Financial Security Solutions.
+        <p className="text-2xl md:text-3xl text-gray-200 mt-8">
+          29+ Years of Insurance & Financial Advisory Excellence
         </p>
 
-        {/* BUTTONS */}
+        <p className="text-xl text-gray-300 mt-4 max-w-4xl mx-auto">
+          Helping families and businesses protect what matters most through
+          Life Insurance, General Insurance and Mutual Fund investments.
+        </p>
 
-        <div className="flex flex-wrap justify-center gap-6 mt-16">
+      </section>
 
-          <Link
-            to="/dashboard/policies"
-            className="bg-yellow-400 text-black px-10 py-5 rounded-2xl font-bold text-2xl hover:scale-105 transition"
-          >
-            Explore Plans
-          </Link>
+      {/* ==========================================
+          OUR RANGE OF PRODUCTS
+      ========================================== */}
 
-          <Link
-            to="/contact"
-            className="border border-white px-10 py-5 rounded-2xl font-bold text-2xl hover:bg-white hover:text-blue-900 transition"
-          >
-            Contact Us
-          </Link>
+      <section className="px-6 pb-24">
 
-          <Link
-            to="/dashboard/create-policy"
-            className="bg-white text-blue-900 px-10 py-5 rounded-2xl font-bold text-2xl hover:bg-gray-100 transition"
-          >
-            Create Policy
-          </Link>
+        <div className="max-w-7xl mx-auto">
+
+          <div className="text-center mb-16">
+
+            <h2 className="text-5xl font-bold text-white mb-4">
+              OUR RANGE OF PRODUCTS
+            </h2>
+
+            <div className="w-32 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+
+            <p className="text-xl text-gray-200 mt-6">
+              Comprehensive Insurance & Investment Solutions
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            {/* Life Insurance */}
+
+            <Link
+              to="/plans"
+              className="bg-white text-blue-900 rounded-3xl p-10 shadow-2xl border border-gray-200 hover:-translate-y-2 hover:shadow-3xl transition duration-300"
+            >
+              <div className="text-center">
+
+                <div className="text-6xl mb-6">❤️</div>
+
+                <h3 className="text-4xl font-bold mb-6">
+                  Life Insurance
+                </h3>
+
+                <p className="text-xl leading-relaxed">
+                  Secure your family's future with comprehensive life
+                  insurance protection and financial security.
+                </p>
+
+              </div>
+            </Link>
+
+            {/* General Insurance */}
+
+            <Link
+              to="/plans"
+              className="bg-white text-blue-900 rounded-3xl p-10 shadow-2xl border border-gray-200 hover:-translate-y-2 hover:shadow-3xl transition duration-300"
+            >
+              <div className="text-center">
+
+                <div className="text-6xl mb-6">🛡️</div>
+
+                <h3 className="text-4xl font-bold mb-6">
+                  General Insurance
+                </h3>
+
+                <p className="text-xl leading-relaxed">
+                  Protect your health, home, business and assets with
+                  trusted insurance coverage.
+                </p>
+
+              </div>
+            </Link>
+
+            {/* Mutual Funds */}
+
+            <Link
+              to="/plans"
+              className="bg-white text-blue-900 rounded-3xl p-10 shadow-2xl border border-gray-200 hover:-translate-y-2 hover:shadow-3xl transition duration-300"
+            >
+              <div className="text-center">
+
+                <div className="text-6xl mb-6">📈</div>
+
+                <h3 className="text-4xl font-bold mb-6">
+                  Mutual Funds
+                </h3>
+
+                <p className="text-xl leading-relaxed">
+                  Build long-term wealth through professionally managed
+                  mutual fund investment solutions.
+                </p>
+
+              </div>
+            </Link>
+
+          </div>
 
         </div>
 
       </section>
 
       {/* ==========================================
-          FEATURES SECTION
+          STATS SECTION
       ========================================== */}
 
-      <section className="bg-white text-gray-900 py-24 px-8">
+      <section className="bg-white py-24 text-gray-900">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="grid md:grid-cols-3 gap-12 text-center">
+
+            <div>
+
+              <h2 className="text-6xl font-bold text-blue-700">
+                29+
+              </h2>
+
+              <p className="text-xl text-gray-600 mt-4">
+                Years of Experience
+              </p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-6xl font-bold text-green-600">
+                1800+
+              </h2>
+
+              <p className="text-xl text-gray-600 mt-4">
+                Families Served
+              </p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-6xl font-bold text-purple-600">
+                MDRT
+              </h2>
+
+              <p className="text-xl text-gray-600 mt-4">
+                Global Recognition
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ==========================================
+          WHY CHOOSE US
+      ========================================== */}
+
+      <section className="bg-slate-100 text-gray-900 py-24 px-8">
 
         <div className="max-w-7xl mx-auto">
 
           <h2 className="text-5xl font-bold text-center text-blue-900 mb-16">
-            Why Choose InsurancePro?
+            Why Choose Us?
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10">
 
-            {/* CARD 1 */}
-
-            <div className="bg-gray-100 p-10 rounded-3xl shadow-lg">
+            <div className="bg-white p-10 rounded-3xl shadow-lg">
 
               <h3 className="text-3xl font-bold text-blue-900 mb-4">
-                Trusted Policies
+                Trusted Advisory
               </h3>
 
               <p className="text-lg text-gray-700">
-                Get secure insurance plans tailored for
-                health, life, vehicle, and financial growth.
+                Nearly three decades of expertise helping families make informed
+                insurance and financial decisions.
               </p>
 
             </div>
 
-            {/* CARD 2 */}
-
-            <div className="bg-gray-100 p-10 rounded-3xl shadow-lg">
+            <div className="bg-white p-10 rounded-3xl shadow-lg">
 
               <h3 className="text-3xl font-bold text-blue-900 mb-4">
-                Fast Claim Support
+                Claims Assistance
               </h3>
 
               <p className="text-lg text-gray-700">
-                Easily manage claims with our streamlined
-                dashboard and claim assistance system.
+                Dedicated support throughout claims and maturity settlements.
               </p>
 
             </div>
 
-            {/* CARD 3 */}
-
-            <div className="bg-gray-100 p-10 rounded-3xl shadow-lg">
+            <div className="bg-white p-10 rounded-3xl shadow-lg">
 
               <h3 className="text-3xl font-bold text-blue-900 mb-4">
-                Smart Investments
+                Wealth Creation
               </h3>
 
               <p className="text-lg text-gray-700">
-                Track SIPs, mutual funds, and long-term
-                investment growth in one place.
+                Customized mutual fund and financial planning solutions.
               </p>
 
             </div>
