@@ -34,7 +34,7 @@ function Contact() {
                 </div>
 
                 <p className="text-xl text-gray-600">
-                  support@insurancepro.com
+                  gopinathkrishnaraj@gmail.com
                 </p>
               </div>
 
@@ -49,7 +49,7 @@ function Contact() {
                 </div>
 
                 <p className="text-xl text-gray-600">
-                  +91 9876543210
+                 +91 9373105259
                 </p>
               </div>
 
@@ -64,7 +64,9 @@ function Contact() {
                 </div>
 
                 <p className="text-xl text-gray-600">
-                  Pune, Maharashtra, India
+                  1st Floor, Vali Manzil,
+                  Kamptee Road,
+                  Nagpur - 440030
                 </p>
               </div>
 
@@ -84,7 +86,7 @@ function Contact() {
               <div className="space-y-5 text-xl">
 
                 <p>
-                  <strong>Organization:</strong> InsurancePro
+                  <strong>Organization:</strong> Gopinath Insurance
                 </p>
 
                 <p>
@@ -92,20 +94,25 @@ function Contact() {
                 </p>
 
                 <p>
-                  <strong>Email:</strong> support@insurancepro.com
+                  <strong>Email:</strong> gopinathkrishnaraj@gmail.com
                 </p>
 
                 <p>
-                  <strong>Phone:</strong> +91 9876543210
+                  <strong>Phone:</strong> +91 9373105259
                 </p>
 
                 <p>
-                  <strong>Location:</strong> Pune, Maharashtra
-                </p>
+                  <strong>Address:</strong>
+                  <br />
+                  1st Floor, Vali Manzil,
+                  <br />
+                  Kamptee Road,
+                  <br />
+                  Nagpur - 440030
+                  </p>
 
                 <p>
-                  <strong>Services:</strong> Life Insurance, Health Insurance,
-                  Mutual Funds, SIP Planning
+                  <strong>Services:</strong> General insurance , Life Insurance , Mutual Funds
                 </p>
 
               </div>
